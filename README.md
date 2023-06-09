@@ -1,2 +1,1 @@
-# E-Commerce
-Manage categories, products and tags for and E-Commerce Shop.
+# E-commerce Back End Starter Code
