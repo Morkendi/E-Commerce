@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
     });
     ProductData ? res.status(200).json(ProductData) : res.status(404).json({ message: 'No products found!' });
 
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   }
 });
@@ -44,7 +44,7 @@ router.get('/:id', async (req, res) => {
     });
     SingleProduct ? res.status(200).json(SingleProduct) : res.status(404).json({ message: 'No product found!' });
 
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   }
 });
@@ -72,12 +72,10 @@ router.post('/', async (req, res) => {
       return ProductTag.bulkCreate(productTagIdArr);
     }
     // if no product tags, just respond
-    res.status(200).json(NewProduct);
     res.status(200).json(productTagIds)
-
     res.status(200).json(NewProduct);
-  } catch {
-    console.log(err);
+
+  } catch (err){
     res.status(400).json(err);
   }
 });
@@ -118,9 +116,9 @@ router.put('/:id', async (req, res) => {
       ProductTag.bulkCreate(newProductTags),
     ]);
   }
-  
   return res.json(product);
-  } catch (err) {
+  
+} catch (err){
   res.status(400).json(err);
   }
   });
@@ -135,7 +133,7 @@ router.delete('/:id', async (req, res) => {
     });
     DeleteProduct ? res.status(200).json(DeleteProduct) : res.status(404).json({ message: 'No product found!' });
 
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   }
 });

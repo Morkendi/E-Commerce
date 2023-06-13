@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
     });
     CategoryData ? res.status(200).json(CategoryData) : res.status(404).json({ message: 'No categories found!' });
 
-  } catch {
+  } catch (err){
     res.status(500).json(err)
   }});
 
@@ -31,7 +31,7 @@ router.get('/:id', async (req, res) => {
     })
     SingleCategory ? res.status(200).json(SingleCategory) : res.status(404).json({ message: 'Category not found!' });
 
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   }
 });
@@ -43,7 +43,7 @@ router.post('/', async (req, res) => {
       category_name: req.body.category_name
     });
     res.status(200).json(NewCategory);
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   } 
 });
@@ -58,7 +58,7 @@ router.put('/:id', async (req, res) => {
     });
     UpdateCategory ? res.status(200).json(UpdateCategory) : res.status(404).json({ message: 'No category found with this id!' }) 
 
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   }
 });
@@ -73,7 +73,7 @@ router.delete('/:id', async (req, res) => {
     });
     DeleteCategory ? res.status(200).json(DeleteCategory) : res.status(404).json({ message: 'No category found with this id!' });
 
-  } catch {
+  } catch (err){
     res.status(500).json(err);
   }
 });
