@@ -40,16 +40,16 @@ Follow these steps to get started:
 The following images demonstrate the functionality of the application.
 <div align="center">
 <img src="./assets/images/GET%20All.png" alt="GET all categories"></img>
-    <figcaption>GET all categories<figcaption>
+    <figcaption>GET all categories</figcaption>
 
 <img src="./assets/images/GET%20One.png"></img>
-    <figcaption>GET one product<figcaption>
+    <figcaption>GET one product</figcaption>
 
 <img src="./assets/images/POST.png"></img>
-    <figcaption>PCREATE a category<figcaption>
+    <figcaption>PCREATE a category</figcaption>
 
 <img src="./assets/images/PUT.png"></img>
-    <figcaption>UPDATE a category<figcaption>
+    <figcaption>UPDATE a category</figcaption>
 </div>
 
 ## Credits
