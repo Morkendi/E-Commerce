@@ -62,4 +62,4 @@ This project utilizes an MIT License. [Read more](https://choosealicense.com/lic
 
 ## Links
 - Link to [GitHub repo](https://github.com/Morkendi/E-Commerce)
-- Link to [Video Demo]()
+- Link to [Video Demo](https://drive.google.com/file/d/1lZfVWBViAZkzQdCRo5fAY5YeOQkA9Ltj/view?usp=sharing)
